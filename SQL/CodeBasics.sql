@@ -10,5 +10,6 @@ Select p.product_code,sum(t.sales_amount) as "Total Sales" from sales.products a
 /*Customer type wise sales*/
 Select c.customer_type,Sum(t.sales_amount) from sales.customers as c inner join sales.transactions as t on c.customer_code=t.customer_code  group by c.customer_type; 
 
+/*Based on region wise sales data , begaluru has lowest sales hence to analyse why bengaluru has lowest sales the below analysis query was done on the distinct count of products sold in each region*/
 /*region wise distinct product count*/
 Select m.markets_name,count(distinct(product_code)) as "Dsitinct Products" from sales.transactions as t inner join sales.markets as m on m.markets_code=t.market_code group by m.markets_code order by count(distinct(product_code)) ;
