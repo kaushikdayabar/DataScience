@@ -1,6 +1,7 @@
 /*year wise sales*/ 
 Select dt.year,Sum(sales_amount) as "Total Sales" from sales.transactions as t inner join sales.date as dt on t.order_date=dt.date group by dt.year;
 
+/* Some of our own insights from the sample dataset*/
 /*region wise sales*/
 Select m.markets_code,m.markets_name,SUM(t.sales_amount) as "Total Sales" from sales.markets as m inner join sales.transactions as t on m.markets_code=t.market_code group by m.markets_code order by Sum(t.sales_amount) ; 
 
