@@ -43,11 +43,3 @@ select * from cleanedtransactions1 limit 5;
 'Prod003', 'Cus005', 'Mark004', '2017-11-20', '59', '500', 'USD\r', NULL, '5'
 
 */
-
-
-Create procedure UpdateNormalizedSalesAmount(Total int)
-begin
-set @i=0;
-repeat 
-
-update cleanedtransactions1 set NormalizedSalesAmount=
