@@ -1,0 +1,16 @@
+1.	Power BI Visuals:
+    a.	General Formatting in Visuals:
+        i.	Properties: Size,Position, Padding and advanced Options etc
+        ii.	Title: Visual Title,Subtitle, Divider(below Subtitle) and Spacing
+        iii.	Effects: Background Colour,Border Color and Shadow
+        iv.	Header Icons: The icons on visual top like filtering, focus mode etc
+        v.	Alt Text: Accessibility via Screen reader
+    b.	Slicer:
+        i.	If horizontal orientation of tiles is needed , then disable responsiveness
+        ii.	Slicer will display values only if we have records for that value. For example, If we have 2 slicers one for year and another for month. For Year 2020,if the month slicer I displaying only Jan and Feb, it means there is no data for March-2020. Similarly, if we select June and 2020 will vanish in year slicer because there is no record for June-2020.
+        iii.	Currently,Any kind of slicer could be cleared but single select should be off. Single Select option is available in Visual->FormatYourVisual->SlicerSettings->Selection.Further, to clear one specific filter click on eraser icon in top right.
+        iv.	Slicers or other visuals affect other visuals by default(either highlight or filter) but we can stop this selecting the visual->format Ribbon ->edit interactions.
+        v.	Apply All Slicers and clear all slicers are used for performance improvement.
+        vi.	Sync Slicers option to sync slicers in multiple pages.
+
+
