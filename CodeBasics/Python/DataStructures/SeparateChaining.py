@@ -17,7 +17,7 @@ class customDictionary:
 
         for idx,element in varEnum:
             if element[0]==key:
-                self.arr[ind][idx][1]=item
+                self.arr[ind][idx]=(key,item)
                 return
         
         self.arr[ind].append((key,item))
