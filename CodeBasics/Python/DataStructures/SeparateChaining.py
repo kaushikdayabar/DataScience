@@ -17,9 +17,10 @@ class customDictionary:
 
         for idx,element in varEnum:
             if element[0]==key:
+                #if key found then replace key and item
                 self.arr[ind][idx]=(key,item)
                 return
-        
+         #if key not found then append key and item
         self.arr[ind].append((key,item))
 
         print(self.arr)
