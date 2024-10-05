@@ -1,7 +1,9 @@
 from collections import deque
 
 
-#Instead of list , we are using deque because list uses dynamic array while deque uses doubly linked list hence we avoid dynamic memory allocation problem
+#Instead of list , we are using deque because list uses dynamic array while deque uses doubly linked list 
+#hence we avoid dynamic memory allocation problem because in case memory exceeded dynamic memory allocation will lead 
+#to lots of memory re allocation
 class Stack:
 
     def __init__(self):
