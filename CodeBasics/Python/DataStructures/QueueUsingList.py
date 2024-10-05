@@ -1,3 +1,6 @@
+#Better to use deQueue from collections library because in case of lists in case current memory exceeds 
+#dynamic memory allocation technique has to copy all the elements to a new memory location which is expensive
+
 class Queue:
 
     def __init__(self):
