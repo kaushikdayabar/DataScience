@@ -1,3 +1,5 @@
+#It is called Bubble sort because , during each iteration the largest element comes to the top like bubbles
+
 inpArr=[38,2,34,8,23,4,67,6,88,9]
 inpLength=len(inpArr)-1
 
