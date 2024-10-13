@@ -1,5 +1,5 @@
 l=[2,1,5,3,4,7,8,15,12]
-
+#using hoare technique
 def quickSort(l,start,end):
     p=start
     s,e=start+1,end
