@@ -8,9 +8,11 @@ def mergeSort(l):
     leftArr=l[:mid]
     rightArr=l[mid:]
     
+    #partioning the arrays to single elements
     mergeSort(leftArr)
     mergeSort(rightArr)
 
+    #This is the use of recursion, once partitioning is done we are merging the arrays
     join2Sort(leftArr,rightArr,l)
 
     return l
