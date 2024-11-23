@@ -2,7 +2,7 @@ import time
 
 
 def decoratorFunc(func):
-    #it is wrapper over a function
+    #decorator is wrapper over a function
     def wrapper(*args,**kwargs):
         start=time.time()
         result=func(*args,**kwargs)
